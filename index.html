@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>State Bank of India</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<!-- head-->
+<body>
+    <section class="logo">
+    <div class="logo">
+        <table>
+            <tr>
+        <img class="upper-logo1" src="images\left.png">
+        <img class="upper-logo2" src="images\right.png">
+            </tr>
+    </table>
+
+    <h1>Application Form</h1><hr>
+    </div>
+    </section>
+<fieldset>
+    <section>
+        <div class="basic">
+            <h2>Basic Details</h2><hr>
+            <form>
+                <label class="standard-label" for="dropdown">Title<span aria-required="">*</span></label>
+                <select id="dropdown" class="standard-select">
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Miss.">Miss</option>
+                    <option value="Ms.">Ms</option>
+                    <option value="Dr.">Dr.</option>
+                    <option value="Prof.">Prof</option>    
+                </select>
+                <label for="firstname" class="standard-label">
+                    First Name<span class="required">*</span>
+                    <input class="standard-input" name="firstname" id="firstname" type="text" placeholder="First name..." required>
+                  </label>
+                  <label for="middlenames" class="standard-label">
+                    Middle Names (If Applicable)
+                    <input class="standard-input" name="middlename" id="middlename" type="text" placeholder="Middle names...">
+                  </label>
+                  <label for="lastname" class="standard-label">
+                    Last Name<span class="required">*</span>
+                    <input class="standard-input" name="lastname" id="lastname" type="text" placeholder="Last name..." required>
+                  </label>
+                  <label for="dob" class="standard-input">Date of Birth<span class="required">*</span>
+                    <input class="standard-input" type="date" name="dob" id="dob" required>
+                  </label>
+                  <label for="account" class="standard-label">Account Number<span class="required">*</span>
+                      <input type="text" id="account" class="standard-input" placeholder="Account Number.." 
+                      name="account" pattern='d{10,12}' maxlength="12" required>
+                  </label>
+                  <label for="cif" class="standard-label">CIF Number<span class="required">*</span>
+                    <input type="text" id="cif" class="standard-input" placeholder="CIF Number.." 
+                    name="account" pattern='d{10,12}' maxlength="11" required>
+                </label>
+                  <label for="aadhaar" class="standard-label">Aadhaar Number<span class="required">*</span>
+                    <input type="text" id="account" class="standard-input" placeholder="Aadhaar Number.." 
+                    name="account" pattern="/^(?:\(\d{3}\)|\d{3}-)\d{3}-\d{4}$/" maxlength="12">
+                </label>
+                  <label for="phone-number" class="standard-label">
+                    Phone Number<span class="required">*</span>
+                    <input class="standard-input" type="tel" id="phone" name="phone" pattern='^\+?\d{10,12}' placeholder="Example: 01925999111" maxlength="11" required>
+                  </label>            
+            </form>
+            <form>
+                <h3>Dear Madam / sir</h3>
+                <h2>KINDLY ACCEPT MY REQUEST</h2>
+                <h3>PLEASE TICK ONLY SERVICE IN A SINGLE FORM</h3>
+                <hr>
+                <input type="checkbox" class"standard-input" name="chequeBook">Check Book
+                <p>Please issue 20/50/100/1000-leaf ORDER/BEARER Cheque book for my 
+                    SB/CA/CC & debet charges (if any)from my account
+                </p>
+                <label for="checkbox" class="standard-label"></label>
+
+                <input type="checkbox" class"standard-input" name="chequeBook">For Cheque Book Facility
+                <p>Please provide Cheque Book facility in my SB/CA/CC account</p>
+                <label for="checkbox" class="standard-label"></label>
+                
+                <input type="checkbox" class"standard-input" name="chequeBook">For Transfer Of Account
+                <p><label for="text">Please Transfer my A/c to Branch:</label>
+                    <input type="text" id="text" class="standard-input-check" placeholder="branch name">Branch code:<input type="text" id="text" class="standard-input-check" placeholder="branch Code">
+                </p>
+                <label for="checkbox" class="standard-label"></label>
+
+
+                <input type="checkbox" class"standard-input" name="chequeBook">For Closure of Deposite Account
+                <p><label for="text">close my SB/RD/STDR/TDR/  Account:</label> <input type="text" id="text" class="standard-input-check" placeholder="A/C Number..">
+                    and credit the amount in my CA/SB/CC/OD Account:<input type="text" id="text" class="standard-input-check" placeholder="A/c Number..">
+                    or pay in cash (if permitted)
+                </p>
+                <label for="checkbox" class="standard-label"></label>
+
+
+                <input type="checkbox" class"standard-input" name="chequeBook">For Issue of Duplicate Passbook
+                <p><label for="text">Please issue a duplicate Passbook (copy of FIR/GD Enclosed) & debit charges(if any) from my account</label>
+
+                </p>
+                
+
+
+
+                <input type="checkbox" class"standard-input" name="chequeBook">For Change of Mobile Number
+                <label for="checkbox" class="standard-label"></label>
+                <p><label for="text">Please update new Mobile Number to my A/C New Mobile Number:</label>
+                    <input type="text"  maxlength="10" placeholder="Enter with '0'">
+                </p>
+
+
+
+
+                <input type="checkbox" class"standard-input" name="chequeBook">For SMS Alert
+                <label for="checkbox" class="standard-label"></label>
+                <p><label for="dropdown">please </label>
+                <select name="dropdown" id="dropdown" class="standard-select">
+                    <option value="provide" id="standard-select" name="provide">provide</option>
+                    <option value="stop" id="standard-select" name="stop" >stop</option>
+                </select><label for="text">SMS Alert fecility of my Account to Mobile Number :</label><input type="text" id="text" placeholder="Enter with 0" >
+                </p>
+
+
+
+                <input type="checkbox" class"standard-input" name="chequeBook">For Issue of ATM Card
+                <label for="checkbox" class="standard-label"></label>
+                <p>Please issue an ATM Card on my Account
+                </p>
+
+
+
+
+                <input type="checkbox" class"standard-input" name="chequeBook">For ATM Pin Genaration
+                <label for="checkbox" class="standard-label"></label>
+                <p>
+                    <label for="text">please regenarate ATM pin Card Number:</label><input type="text" id="text" maxlength="11" placeholder="Enter ATM card">
+                    & debit charges(if any) from my account
+                </p>
+
+
+
+
+                <input type="checkbox" class"standard-input" name="chequeBook">For ATM Card Replacement
+                <label for="checkbox" class="standard-label"></label>
+                <p>
+                    <label for="text">please issue another ATM Card & debit any charges(if any) from my account</label>
+                </p>
+
+
+
+                
+                <input type="checkbox" class"standard-input" name="chequeBook">For Standing Instruction
+                <label for="checkbox" class="standard-label"></label>
+                <p>
+                    <label for="text">please transfer Rs.<input type="text" id="text" placeholder="Enter Amount">( per month ) starting on <input type="text" id="text" placeholder="A/C number">
+                        from my SB/CA/OD/CC Account to RD/PPF/OD/SB/CA Loan Account <input type="text" id="text" placeholder="loan A/C number"> 
+                        & debit any charges (if any) from my Account</label>
+                </p>
+
+
+
+                <input type="checkbox" class"standard-input" name="chequeBook">For Cancellation of DD/BC
+                <label for="checkbox" class="standard-label"></label>
+                <p><label for="text">please cancel the DD/BC No:<input type="text" id="text" placeholder="Enter number"> is issued on <input type="date" id=text>in favour of <input type="text" placeholder="favour of" >
+                    as it no longer needed by me. & debit any charges (if any) from my Account and pay me the remaining amount in cash or by 
+                Transfer to A/C No. <input type="text" id="text" placeholder="A/C Number"></label></p>
+
+
+
+
+                <input type="checkbox" class"standard-input" name="chequeBook">For Change of email ID
+                <label for="checkbox" class="standard-label"></label>
+                <p>
+                    <label for="email">please change my email ID as <input type="email" id="email" placeholder="Enter@mail.com"> in my CIF</label>
+                </p>
+
+
+
+
+                <input type="checkbox" class"standard-input" name="chequeBook">For Mobile Banking Registration
+                <label for="checkbox" class="standard-label"></label>
+                <p>
+                    <label for="netbanking">User ID<input type="text" id="netbanking" placeholder="user ID">,Mobile NO.<input type="tel" ID="netbanking" placeholder="Mobile number"></label>
+                </p>
+
+
+
+                <input type="checkbox" class"standard-input" name="chequeBook">For Internet Banking Registration
+                <label for="checkbox" class="standard-label"></label>
+                <p>please register me for Internet Banking</p>
+
+
+
+
+                <input type="checkbox" class"standard-input" name="chequeBook">Conversion of Account type
+                <label for="checkbox" class="standard-label"></label>
+                <p>
+                    <label for="convert" class="dropdown">convert from 
+                        <select name="account" id="dropdown">
+                            <option value="account" id="dropdown" name="SB">SB</option>
+                            <option value="account" id="dropdown" name="Basic">Basic</option>
+                            <option value="account" id="dropdown" name="small">Small</option>
+                        </select> A/C to 
+                        <select name="covert" id="dropdown">
+                            <option value="account" id="dropdown" name="SB">SB</option>
+                            <option value="account" id="dropdown" name="SB">SB Pluse</option>
+                            <option value="account" id="dropdown" name="SB">SB Premium</option>
+                        </select> Account.
+                </p>
+                
+
+
+
+                <input type="checkbox" class"standard-input" name="chequeBook">Change of Name / Address
+                <label for="checkbox" class="standard-label"></label>
+                <p>please change my Name and Address as per Enclosed Document.<br>for Name:<input type="file" class="standard-input">
+                    <br>for Address:<input type="file" class="standard-input"></p>
+
+
+
+                
+                <input type="checkbox" class"standard-input" name="chequeBook">Account Statement
+                <label for="checkbox" class="standard-label"></label>
+                <p>
+                    <label for="statement">provide me statement on : <input type="date"></label>
+                </p>
+
+
+
+                <h3 class="enclosed">Enclosed KYC Document:</h3>
+                <p>passport,aadhar,Voter ID,Driving License,PAN Card</p>
+                <label for="file" class="standard-label">Upload Doccument</label><span class="required">*</span>
+                <input type="file" class="standard-input" name="filename" id="file" required>
+                
+                
+                
+                
+                
+            </form>
+        </div>
+    </section>
+</fieldset>
+<div class="frame">
+    <button class="custom-btn btn"><span>SUBMIT</span></button>
+</div>
+
+</body>
+
+</html>
